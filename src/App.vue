@@ -7,7 +7,7 @@
 
 <script>
 import Ejercicio1 from './components/ejercicio1.vue'
-import Ejercicio2 from './components/ejercicio2.vue'
+import Ejercicio2 from './components/Ejercicio2.vue'
 
 export default {
   components: {

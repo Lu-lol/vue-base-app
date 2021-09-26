@@ -1,13 +1,13 @@
 <template>
     <section>
-        <input type="text" v-model="num1">
+        <input class="num1" type="text" v-model="num1">
         <select v-model="operand"> 
             <option value="+"> + </option>
             <option value="-"> - </option>
             <option value="*"> * </option>
             <option value="/"> / </option>
         </select>
-        <input type="text" v-model="num2">
+        <input class="num2" type="text" v-model="num2">
         <button @click="calc">calcular</button>
         <h1 v-if="err != ''">{{err}}</h1>
         <h2 class="result">{{results}}</h2>
@@ -65,7 +65,7 @@ export default {
 };
 </script>
 <style>
-.result {
+.result, .num1, .num2 {
     text-align: center;
 }
 </style>

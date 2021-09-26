@@ -8,6 +8,7 @@
             <option value="/"> / </option>
         </select>
         <input type="text" v-model="num2">
+        <button @click="calc">calcular</button>
         <h1 v-if="err != ''">{{err}}</h1>
         <h2 class="result">{{results}}</h2>
     </section>

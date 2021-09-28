@@ -1,7 +1,7 @@
 <template>
     <section>
         <input class="num1" type="text" v-model="num1">
-        <select v-model="operand"> 
+        <select v-model="operand" > 
             <option value="+"> + </option>
             <option value="-"> - </option>
             <option value="*"> * </option>

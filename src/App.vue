@@ -1,6 +1,8 @@
 <template>
   <div id="app">
+    <h2 class="ej">Ejercicio 1</h2>
     <ejercicio-1 />
+    <h2 class="ej">Ejercicio 2, 3</h2>
     <ejercicio-2 />
   </div>
 </template>
@@ -19,5 +21,7 @@ export default {
 </script>
 
 <style>
-
+.ej {
+  text-align: center;
+}
 </style>

@@ -27,42 +27,31 @@ export default {
     }, 
     methods: {
         calc(){
-            switch(this.operand){
+            if(isNaN(this.num1) || isNaN(this.num2)){
+                this.err = "No es un numero";
+            } else {
+                switch(this.operand){
                 case"+":
-                if(isNaN(this.num1) || isNaN(this.num2)){
-                    this.err = "No es un numero";
-                } else {
                     this.err = "";
                     this.results = parseInt(this.num1) + parseInt(this.num2);
-                }
-                break;
+                    break;
                 case"-":
-                if(isNaN(this.num1) || isNaN(this.num2)){
-                    this.err = "No es un numero";
-                } else {
                     this.err = "";
                     this.results = parseInt(this.num1) - parseInt(this.num2);
-                }
-                break;
+                    break;
                 case"*":
-                if(isNaN(this.num1) || isNaN(this.num2)){
-                    this.err = "No es un numero";
-                } else {
                     this.err = "";
                     this.results = parseInt(this.num1) * parseInt(this.num2);
-                }
-                break;
+                    break;
                 case"/":
-                if(isNaN(this.num1) || isNaN(this.num2)){
-                    this.err = "No es un numero";
-                } else {
                     this.err = "";
                     this.results = parseInt(this.num1) / parseInt(this.num2);
+                    break;
                 }
             }
+            }
         },
-    },
-};
+    };
 </script>
 <style>
 .result, .num1, .num2 {

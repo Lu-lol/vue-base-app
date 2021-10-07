@@ -1,10 +1,7 @@
 <template>
   <div id="app">
-    <h2 class="ej">Ejercicio 1</h2>
     <ejercicio-1 />
-    <h2 class="ej">Ejercicio 2, 3</h2>
     <ejercicio-2 />
-    <h2 class="ej">Ejercicio 4</h2>
     <ejercicio-4/>
   </div>
 </template>
@@ -26,7 +23,7 @@ export default {
 </script>
 
 <style>
-.ej {
-  text-align: center;
-}
+  h1{
+    font-size: 31px;
+  }
 </style>

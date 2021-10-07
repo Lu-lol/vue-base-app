@@ -1,15 +1,16 @@
 <template>
-    <section>
-        <input class="num1" type="text" v-model="num1">
-        <select v-model="operand" > 
+    <section class="container">
+        <h1>Ejercicio 2/3</h1>
+        <input class="num1" type="text" v-model="num1"> <br>
+        <input class="num2" type="text" v-model="num2"> <br>
+        <select v-model="operand" class="op"> 
             <option value="+"> + </option>
             <option value="-"> - </option>
             <option value="*"> * </option>
             <option value="/"> / </option>
         </select>
-        <input class="num2" type="text" v-model="num2">
         <button @click="calc">calcular</button>
-        <h1 v-if="err != ''">{{err}}</h1>
+        <h2 v-if="err != ''">{{err}}</h2>
         <h2 class="result">{{results}}</h2>
     </section>
 </template>
@@ -53,8 +54,17 @@ export default {
         },
     };
 </script>
+
 <style>
-.result, .num1, .num2 {
-    text-align: center;
-}
+    .container{
+        text-align:center; 
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        overflow: hidden;
+        width: 100%;
+    }
+    .op {
+        margin-right: 10px;
+    }
 </style>

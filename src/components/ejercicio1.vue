@@ -1,5 +1,6 @@
 <template>
-<div>
+<div class="container">
+    <h1>Ejercicio 1</h1>
     <label>Nombre: </label><br>
     <input class="n" v-model="nombre">
     <p class="h" >Hola {{nombre}}</p>
@@ -15,8 +16,14 @@ export default {
     }
 }
 </script>
+
 <style>
-.n, .h{
-    text-align: center;
-}
+    .container{
+        text-align:center; 
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        overflow: hidden;
+        width: 100%;
+    }
 </style>

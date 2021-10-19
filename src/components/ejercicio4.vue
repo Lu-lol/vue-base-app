@@ -7,7 +7,7 @@ export default {
     lastId: 1,
     data() {
         return {
-            list: [],
+            list: []
         }
     },
     methods: {

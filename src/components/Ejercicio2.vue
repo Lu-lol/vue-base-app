@@ -22,7 +22,7 @@ export default {
             num1:0,
             num2:0,
             operand:"0",
-            results: "results",
+            results: "-",
             err: ""
         };
     }, 

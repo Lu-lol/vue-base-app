@@ -8,7 +8,6 @@ export default {
     data() {
         return {
             list: [],
-
         }
     },
     methods: {
@@ -22,12 +21,13 @@ export default {
             this.list.push(newItem);
             this.newItemName = ''
         },
+        
     },
-}
+};
 </script>
 <template>
     <div class="container">
-        <h1>Ejercicio 4</h1>
+        <h1>Ejercicio 4/5/6</h1>
         <ul class="dot">
             <input type="text" v-model="newItemName">
             <input type="text" v-model="newItemQuantity">

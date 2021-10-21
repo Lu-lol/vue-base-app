@@ -30,8 +30,8 @@ export default {
         <h1>Ejercicio 4/5/6</h1>
         <ul class="dot">
             <input type="text" v-model="newItemName">
-            <input type="text" v-model="newItemQuantity">
-            <button @click="add()">Agregar</button>
+            <input type="text" v-model.number="newItemQuantity">
+            <button @click="add()" v-if="!newItemName=='' && newItemQuantity!=0 && !isNaN(newItemQuantity)">Agregar</button>
             <li v-for="text in list" v-bind:key="text.id" class="text">{{text.name}} x {{text.quantity}}</li>
             <p v-if="list.length==0">No hay nada</p>
         </ul>

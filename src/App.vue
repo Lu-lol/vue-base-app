@@ -2,7 +2,7 @@
   <div id="app">
     <ejercicio-1 />
     <ejercicio-2 />
-    <ejercicio-4/>
+    <ejercicio-4 />
   </div>
 </template>
 
